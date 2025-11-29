@@ -115,4 +115,4 @@ DATA_DIR=/home/ntust_spark/playbook_gptoss/webui open-webui serve --port 9999
 Open the browser: http://localhost:9999
 
 ## Demo Result
-![img]{./demo_result/aaa.png}
+![img](./demo_result/all.png)
