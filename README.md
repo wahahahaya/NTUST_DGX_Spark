@@ -53,7 +53,6 @@ EOF
 ```
 ### 2.1.4 Verify Server Availability
 ```
-```bash
 curl -X POST "http://localhost:8355/v1/chat/completions" \
   -H "Content-Type: application/json" \
   -d '{
@@ -102,10 +101,15 @@ curl -X POST "http://localhost:6611/predict" \
   -F "file=@test.jpg"
 ```
 You should receive detection results in JSON format.
+## NVIDIA DeepStream
+### 2.3.1 Install the Spark Image
+```
+docker run --rm --gpus all nvcr.io/nvidia/deepstream:8.0-triton-dgx-spark nvidia-smi
+```
 ## Open-WebUI
-### 2.3.1 Start Open-WebUI (Port 9999)
+### 2.4.1 Start Open-WebUI (Port 9999)
 ```
 DATA_DIR=/home/ntust_spark/playbook_gptoss/webui open-webui serve --port 9999
 ```
-### 2.3.2 Access the UI
+### 2.4.2 Access the UI
 Open the browser: http://localhost:9999
