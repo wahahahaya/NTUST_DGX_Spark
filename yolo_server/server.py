@@ -16,7 +16,7 @@ OUTPUT_DIR = "/ultralytics/runs/web_predict"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 這個要改成「瀏覽器真的連得到」的 Base URL
-PUBLIC_BASE_URL = "http://127.0.0.1:6611"  # 若 WebUI 不是在同一台，就改成對你瀏覽器可見的 host/ip
+PUBLIC_BASE_URL = "http://192.168.50.82:6611"  # 若 WebUI 不是在同一台，就改成對你瀏覽器可見的 host/ip
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):

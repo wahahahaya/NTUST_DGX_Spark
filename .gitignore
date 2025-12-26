@@ -1,4 +1,8 @@
 *.pt
 *.db
+*.mp4
+*.txt
+*.bin
+*.jpg
 
 /webui
